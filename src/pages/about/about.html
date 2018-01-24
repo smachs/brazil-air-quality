@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Cidades</ion-title>
+  </ion-navbar>
+</ion-header>
+   
+  <ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let information of (ApiCountry | async)?.results" (click)="openDetails(film)">
+      {{ information.location }}
+    </button>
+  </ion-list>
+   
+  </ion-content>

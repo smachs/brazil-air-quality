@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-amsterdam.png"/>
+    <div class="card-title" *ngFor="let information of (API | async)?.results">
+      {{ information.city }}
+    </div>
+
+    <div class="card-subtitle">
+      Teste
+    </div>
+  </ion-card>
+  
+  <ion-card>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-sf.png"/>
+    <div class="card-title">Campinas</div>
+    <div class="card-subtitle">72 Listings</div>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://ionicframework.com/dist/preview-app/www/assets/img/card-madison.png"/>
+    <div class="card-title">Sorocaba</div>
+    <div class="card-subtitle">28 Listings</div>
+  </ion-card>
+
+</ion-content>
