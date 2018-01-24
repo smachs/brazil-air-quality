@@ -1,0 +1,8 @@
+{
+  "name": "brazil-air-quality",
+  "app_id": "9427b8fe",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
